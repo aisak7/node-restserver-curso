@@ -16,6 +16,22 @@ process.env.PORT = process.env.PORT || 3000;
 
 process.env.NODE_ENV = process.env.NODE_ENV || 'dev';
 
+//==============================
+// Vencimiento del Token
+//==============================
+//60 segundos
+//60 minutos
+//24 horas
+//30 dias
+process.env.CADUCIDAD_TOKEN = 60 * 60 * 24 * 30;
+
+
+//==============================
+// SEED de autentucación
+//==============================
+
+process.env.SEED = process.env.SEED || 'este-es-el-seed-del-desarrollo';
+
 
 //==============================
 // Base de Datos
@@ -32,5 +48,13 @@ if(process.env.NODE_ENV === 'dev'){
 }
 
 process.env.URLDB = urlDB;
+
+/* 
+Variables de entorno para heroku
+
+heroku config:set MONGO_URI="xxxxxx" //aqui indicariamos en el lugar de las x la url donde nos queremos conectar
+heroku config:get nombre  //nos devuelve el valor de la variable
+heroku config:unset nombre //aquí eliminamos una varible, en este caso nombre
+heroku config:set nombre="Isaac" */ // aquí cremos una nueva variable nombre con el valor Isaac.
 
 
