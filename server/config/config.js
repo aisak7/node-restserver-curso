@@ -58,3 +58,10 @@ heroku config:unset nombre //aquí eliminamos una varible, en este caso nombre
 heroku config:set nombre="Isaac" */ // aquí cremos una nueva variable nombre con el valor Isaac.
 
 
+
+//==============================
+// Google Client ID
+//==============================
+
+process.env.CLIENT_ID = process.env.CLIENT_ID || '870151640950-840a6uev629v3fush6rju7p6u1pajkoo.apps.googleusercontent.com';
+
