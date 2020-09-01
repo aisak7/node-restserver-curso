@@ -63,5 +63,5 @@ heroku config:set nombre="Isaac" */ // aquí cremos una nueva variable nombre co
 // Google Client ID
 //==============================
 
-process.env.CLIENT_ID = process.env.CLIENT_ID || '870151640950-840a6uev629v3fush6rju7p6u1pajkoo.apps.googleusercontent.com';
+process.env.CLIENT_ID = process.env.CLIENT_ID || '870151640950-njga0g0lts6ha5hoi36dvurpd24uv32b.apps.googleusercontent.com';
 
