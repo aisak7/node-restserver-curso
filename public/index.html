@@ -6,7 +6,7 @@
     <title>Google Sign-In Demo</title>
 
     <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <meta name="google-signin-client_id" content="870151640950-bild0cl5o79q99ac63tpev4ijdlr5ojb.apps.googleusercontent.com">
+    <meta name="google-signin-client_id" content="870151640950-840a6uev629v3fush6rju7p6u1pajkoo.apps.googleusercontent.com">
 
 </head>
 <body>
@@ -33,8 +33,7 @@
 
 
         var id_token = googleUser.getAuthResponse().id_token;
-
-        console.log(id_token);
+        
 
         var xhr = new XMLHttpRequest();
         xhr.open('POST', '/google');
